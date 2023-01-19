@@ -6,8 +6,8 @@ import { useState } from "react";
 
 function Dashbord() {
     const [tasks, setTasks] = useState([
-        { desc: "Learn React", id: 1, date: "2021-01-03 10:00", status: "Complete" },
-        { desc: "Profit", id: 2, date: "2021-01-05 15:00", status: "Open" },
+        { title: "React", desc: "Learn React", id: 1, date: "2021-01-03 15:00-14:00", status: "Complete" },
+        { title: "doc", desc: "visiting the doc", id: 2, date: "2021-01-05 15:00-14:00", status: "Open" },
       ]);
       
       return (
@@ -21,7 +21,6 @@ function Dashbord() {
       </div>
       <div className="section table">
         <div className="container">
-        
       </div>
       </div>
     </div>
