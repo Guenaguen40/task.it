@@ -1,0 +1,47 @@
+.App {
+    text-align: center;
+    background: url('../../bk.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .App-header {
+
+    min-height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  p, h1 {
+    font-family: "Raleway", sans-serif;
+    line-height: 0.1;
+    color: rgb(21, 82, 248);
+  }
+
+  p{
+    font-size: 40px;
+  }
+  .App-logo {
+    padding-bottom: 16px;
+    animation: logo-fade 2s ease-in-out;
+    animation-iteration-count: 3;
+    opacity: 1;
+  }
+  
+  
+  @keyframes logo-fade {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+
+  
+  
+  
+  

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledEntryCard = styled.div`
 width: 100%; 
 max-width: 450px; 
+font-family: "Raleway", sans-serif;
 border-radius: 5px; 
 padding: 50px; 
 margin-bottom: 40px; 

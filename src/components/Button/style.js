@@ -4,6 +4,7 @@ export const StyledButton = styled.button`
 width: ${props => props.full ? '100%' : null};
 min-width: 64px;
 border: 0;
+font-family: "Raleway", sans-serif;
 border-radius: 4px;
 padding: 8px 16px;
 outline: none;
