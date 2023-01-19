@@ -1,0 +1,6 @@
+#list {
+    display: flex;
+    flex-direction: column;}
+.card{
+    margin: 10px;
+}

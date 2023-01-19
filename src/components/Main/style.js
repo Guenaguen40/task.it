@@ -23,7 +23,7 @@ height: 90vh;
 export const NavItemLink = styled(Link)`
 color: inherit;
 width: 100px;
-height: 20px;
+height: 40px;
 text-decoration: none;
 margin-right: 10px;
 ${props => props.fill && css`
