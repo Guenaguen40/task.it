@@ -13,7 +13,6 @@ function Header() {
           </div>
           <div className="nav-right">
         <button className="button primary">New</button>
-      
           </div>
         </nav>
       </div>

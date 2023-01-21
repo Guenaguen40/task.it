@@ -5,6 +5,13 @@ Dashbord{
     background-color: #fbfbfb;
     height: 100vh;
 }
+.Mainb{
+    display: flex;
+    height: 100vh;
+}
+.App{
+    height: 100vh;
+}
 .container {
     margin: 10px;
     max-width: var(--grid-maxWidth);
@@ -36,3 +43,7 @@ Dashbord{
     color: #fff;
     z-index: 1;
 }
+  .smaller-columns .react-kanban-column {
+    width: 50px !important;
+}
+ 
