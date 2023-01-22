@@ -2,75 +2,27 @@ import React from 'react'
 import ReactDOM from "react-dom";
 import Header from "../components/Header";
 import { useState } from "react";
-import Board, { moveCard } from "@lourenci/react-kanban";
-import "@lourenci/react-kanban/dist/styles.css";
-import './style.css';
-import tasks from './data';
 
-
-
-const Dashbord = () => {
-  const [board, setBoard] = useState({
-    columns: [
-      {
-        id: 1,
-        title: "Tasks",
-        cards: tasks.map((task, index) => ({
-          id: task.id,
-          title: task.title,
-          description: task.desc,
-          content: task.duree,
-        })),
-      },
-      {
-        id: 2,
-        title: "Monday",
-        cards: [],
-      },
-      {
-        id: 3,
-        title: "Tuseday",
-        cards: [],
-      },
-    {
-      id: 4,
-      title: "Wednesday",
-      cards: [],
-    },
-  {
-    id: 5,
-    title: "Thursday",
-    cards: [],
-  },
-{
-  id: 6,
-  title: "Friday",
-  cards: [],
-},
-{
-  id: 7,
-  title: "Saturday",
-  cards: [],
-},
-{
-  id: 8,
-  title: "Sunday",
-  cards: [],
-},
-    ],
-  });
-  
-  function onCardMove(card, source, destination) {
-    const updatedBoard = moveCard(board, source, destination);
-    setBoard(updatedBoard);
-  }
-
-  return (
-    <div className="App">
-      <Header />
-      <Board className="smaller-columns" onCardDragEnd={onCardMove}  disableColumnDrag>
-        {board}
-      </Board>
+function Dashbord() {
+    const [tasks, setTasks] = useState([
+        { title: "React", desc: "Learn React", id: 1, date: "2021-01-03 15:00-14:00", status: "Complete" },
+        { title: "doc", desc: "visiting the doc", id: 2, date: "2021-01-05 15:00-14:00", status: "Open" },
+      ]);
+      
+      return (
+        <div  className="App">
+      <Header></Header>
+      <div className="sections">
+      <div className="section">
+      <div className="container">
+        <Tasks tasks={tasks}></Tasks>
+      </div>
+      </div>
+      <div className="section table">
+        <div className="container">
+      </div>
+      </div>
+    </div>
     </div>
   );
 };
